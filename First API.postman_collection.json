@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "216034f0-98cb-4573-82b6-cce32f2c8086",
+		"name": "First API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1975/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1975",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Vignesh\",\r\n    \"age\": 25,\r\n    \"salary\": 3000.0,\r\n    \"sample\":\"xtra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1975/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1975",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employees By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1975/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1975",
+					"path": [
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Vignesh\",\r\n    \"age\": 25,\r\n    \"salary\": 3000.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1975/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1975",
+					"path": [
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1975/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1975",
+					"path": [
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
